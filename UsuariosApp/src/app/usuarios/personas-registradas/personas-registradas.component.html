@@ -1,0 +1,25 @@
+<table class="table table-hover">
+    <tr>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Cedula</th>
+        <th>Telefono</th>
+        <th>Correo</th>
+    </tr>
+    <tr *ngFor="let u of service.usuarios">
+        <td>{{ u.nombre }}</td>
+        <td>{{ u.apellido }}</td>
+        <td>{{ u.documento }}</td>
+        <td>{{ u.telefono }}</td>
+        <td>{{ u.email }}</td>
+        <td (click)="llenarForm(u)">
+            <button class="btn btn mr-4 btn-personalized">
+                <i class="fa fa-edit"></i>
+            </button>
+            <button class="btn btn mr-3 btn-secondary" (click)="eliminarUsuario(u)">
+                <i class="fa fa-trash-o"></i>
+                </button>
+
+        </td>
+    </tr>
+</table>

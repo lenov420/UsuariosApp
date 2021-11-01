@@ -1,0 +1,15 @@
+.card-lista {
+    padding-top: 16px;
+    padding-left: 25px;
+}
+
+.contain {
+    background: #a8a7aa;
+    height: 100%;
+}
+
+.btn-personalized {
+    color: #fff;
+    background-color: #5506b5;
+    border-color: #5506b5;
+}
